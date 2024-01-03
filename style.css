@@ -1,0 +1,230 @@
+body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(62, 136, 160);
+    display: block;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav-items {
+    word-spacing: 20px;
+}
+.nav-items > a:hover {
+    color: grey;
+    text-decoration: underline red;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+.apple-logo {
+    height: 50px;
+}
+.bg-image {
+    padding-top: 30px;
+    padding-left: 300px;
+}
+.bg-image > img {
+    width: 850px;
+}
+.logoa {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.laptop-logo {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: silver;
+}
+.tablet-logo {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: burlywood;
+}
+.phone-logo {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgreen;
+}
+.about-logo {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+}
+.section-one {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: flex-start;
+}
+.tablet-img {
+    flex: 1;
+    background-color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+.tablet-txt {
+    flex: 1;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tablet {
+    width: 300px;
+}
+.section-two {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: flex-start;
+}
+.phone-txt {
+    flex: 1;
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.phone-img {
+    flex: 1;
+    background-color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+}
+.phone {
+    width: 300px;
+}
+.section-three {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: flex-start;
+}
+.laptop-img {
+    flex: 1;
+    background-color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+}
+.laptop-txt {
+    flex: 1;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 23px;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+.laptop {
+    width: 300px;
+}
+.last-part {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: flex-start;
+}
+.team-txt {
+    flex: 1;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.team-txt > h1 {
+    color: black;
+}
+.sallary-txt {
+    flex: 1;
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.sallary-txt > h1 {
+    color: black;
+}
+.earnings-txt {
+    flex: 1;
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.earnings-txt > h1 {
+    color: black;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.facebook-logo {
+    flex: 1;
+    background-color: rgb(62, 136, 160);
+    color: white;
+    text-align: center;
+    padding-left: 250px;
+}
+.google-logo {
+    flex: 1;
+    background-color: rgb(62, 136, 160);
+    color: white;
+    text-align: center;
+}
+.twitter-logo {
+    flex: 1;
+    background-color: rgb(62, 136, 160);
+    color: white;
+    text-align: center;
+}
+.youtube-logo {
+    flex: 1;
+    background-color: rgb(62, 136, 160);
+    color: white;
+    text-align: center;
+}
+.instagram-logo {
+    flex: 1;
+    background-color: rgb(62, 136, 160);
+    color: white;
+    text-align: center;
+    padding-right: 250px;
+}
+.footer-txt {
+    color: white;
+    background-color: rgb(71, 71, 71);
+    padding: 40px;
+    text-align: center;
+}
