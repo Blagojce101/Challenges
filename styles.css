@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text {
+    font-weight: bold;
+}
+
+/* Pre-sets */
+.section-small {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-big {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-big {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-small {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border-top: 3px solid rgb(0, 183, 255);
+    width: 120px;
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    border: solid rgb(0, 183, 255);
+    border-radius: 5px;
+    background-color: rgb(0, 183, 255);
+    padding: 5px 30px;
+}
+
+.button:hover {
+    background-color: rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);
+    transition: 0.3s;
+}
+
+.section-grey {
+    background-color: rgb(239, 239, 239);
+}
+/* Pre-sets */
+
+/* Header Section */
+.bg-img {
+    background-image: url("./images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    isolation: isolate;
+}
+
+.bg-img::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: grey;
+    isolation: isolate;
+    opacity: 0.6;
+}
+
+.flex-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav li {
+    list-style: none;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.welcome-section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.welcome-section p {
+    color: #fff;
+    font-size: 20px;
+}
+/* Header Section - End */
+
+/* Work Section (First-Section) */
+
+.first-section {
+    text-align: center;
+}
+/* Work Section (First-Section) */
+
+/* Image Section (Secuond-Section) */
+
+.flex-container-one, .flex-container-two {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.flex-container-one {
+    padding-bottom: 20px;
+}
+
+.flex-container-one :not(:last-child) {
+    margin-right: 20px;
+}
+
+.flex-container-two :not(:last-child) {
+    margin-right: 20px;
+}
+
+.img-small-one {
+    flex-basis: 40%;
+    background-image: url("./images/coast.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+}
+
+.img-small-two {
+    flex-basis: 40%;
+    background-image: url("./images/mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+}
+
+.img-big-one {
+    flex: 60%;
+    background-image: url("./images/island.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+}
+
+.img-big-two {
+    flex: 60%;
+    background-image: url("./images/balloon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+}
+/* Image Section (Secuond-Section) - End */
+
+/* Third Section */
+
+.card {
+    width: 33.333%;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    color: rgb(0, 183, 255);
+    padding-bottom: 20px;
+}
+
+/* Third Section - End */
+
+/* Form Section (Fourth-Section) */
+
+input {
+    padding: 6px;
+    margin-right: 10px;
+}
+/* Form Section (Fourth-Section) - End */
+
+/* Footer Section (Last-Section) */
+
+.footer {
+    background-color: grey;
+    color: #fff;
+}
+
+.square {
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: grey;
+    background-color: #fff;
+    text-align: center;
+}
+
+.square a {
+    color: grey;
+}
+
+.inner {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.content {
+    font-size: 9px;
+    text-align: center;
+}
+
+/* Footer Section (Last-Section) - End */
+
+/* Media */
+
+@media (max-width: 768px) {
+    .welcome-section {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-small {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-cont {
+        flex-wrap: wrap;
+    }
+
+    .flex-container-one,
+    .flex-container-two {
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-container-one :not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .flex-container-two :not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-small-one, .img-big-one, .img-big-two, .img-small-two {
+        flex: 100%;
+    }
+
+    .flex-container {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .input {
+        size: 50;
+    }
+
+    .form-section {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-section input {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .flex-cont {
+        display: block;
+        text-align: center;
+    }
+
+    .container-big {
+        width: 100%;
+    }
+
+    .section-big {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .section-small {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+    .welcome-section {
+        width: 100%;
+    }
+
+    .welcome-section h1 {
+        font-size: 60px;
+    }
+
+    .flex-container-one, .flex-container-two {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inner {
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Media - End*/
