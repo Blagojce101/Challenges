@@ -1,0 +1,45 @@
+@use "../css/abstracts/variables" as var;
+
+.card-container {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    width: 33.333%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var.$text-color-primary;
+    filter: brightness(0.8);
+}
+
+.Card h3 {
+    font-size: var.$font-size-medium;
+}
+
+.Card p {
+    font-size: var.$font-size-small;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .Card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 426px) {
+    .Card {
+        width: 100%;
+        height: 300px;
+    }
+}
