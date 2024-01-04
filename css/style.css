@@ -1,0 +1,58 @@
+/* Home Background Image */
+.bg-img {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7) url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Custom Background Color */
+.bg-color {
+    background-color: rgb(69, 31, 181);
+}
+
+.bg-color-2 {
+    background-color: rgb(65, 59, 59);
+}
+
+.bg-color-3 {
+    background-color: rgb(58, 18, 178);
+}
+
+/* Custom Button Hover */
+.btn-hover:hover {
+    background-color: white;
+    color: black !important;
+}
+
+/* Custom Width */
+.w-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+.img-100 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Custom Media (Tablet & Mobile) */
+@media (max-width: 768px) {
+    .col-7 {
+        display: none;
+    }
+    .media-md {
+        flex-direction: column-reverse;
+    }
+}
