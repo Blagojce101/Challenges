@@ -1,0 +1,10 @@
+1. "I've checked if I had the lastest version of the Repository Challenges 05"
+2. "After that I went to the main branch and create new branches with name Challenges + number of the challenge and short description (ex. Challenge 06 - Git&GitLab)"
+3. "After creating new branch, I use the command  git push --set-upstream origin <branch name> to push the branch on remote repository"
+4. "After that I put all the files and images and use the command git add . and git commit -m to add all the changes on that local branch"
+5. "After carefully checking the branches and the content inside, I use the command git push to add all files on the remote repositury"
+6. "I use this commands for all branches which I made (Total 5 branches including the last branch Challenge 06)"
+7. "Double checked on gitlab if the branches and this txt is there"
+
+
+Thank you for taking the time to check out my challenge. I hope you have a great day. :)
