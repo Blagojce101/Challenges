@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark custom-bg-color container-fluid"
+    >
+      <a class="navbar-brand text-uppercase text-muted" href="./home.html"
+        >glozzom</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase custom-active" href="./home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="./about.html">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="./services.html"
+              >services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="./blog.html">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url(./Images/image1.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+          "
+        >
+          <div
+            class="carousel-caption d-none d-md-block text-white text-right text-custom-right"
+          >
+            <h2 style="text-shadow: 1px 1px grey" class="text-capitalize">
+              heading one
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              aperiam unde omnis quaerat libero recusandae quasi.
+            </p>
+            <button class="btn btn-sm btn-danger text-capitalize">
+              sing up now
+            </button>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="
+            background-image: url(./Images/image2.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+          "
+        >
+          <div
+            class="carousel-caption d-none d-md-block text-white text-center text-custom-center w-75"
+          >
+            <h2 style="text-shadow: 1px 1px grey" class="text-capitalize">
+              heading two
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              aperiam unde omnis quaerat libero recusandae quasi.
+            </p>
+            <button class="btn btn-sm btn-primary text-capitalize">
+              learn more
+            </button>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="
+            background-image: url(./Images/image3.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+          "
+        >
+          <div
+            class="carousel-caption d-none d-md-block text-white text-center text-custom-center w-75"
+          >
+            <h2 style="text-shadow: 1px 1px grey" class="text-capitalize">
+              heading three
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              aperiam unde omnis quaerat libero recusandae quasi.
+            </p>
+            <button class="btn btn-sm btn-success text-capitalize">
+              learn more
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev border-0 bg-transparent"
+        type="button"
+        data-target="#carouselExampleCaptions"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next border-0 bg-transparent"
+        type="button"
+        data-target="#carouselExampleCaptions"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- First Section -->
+    <div class="container">
+      <div class="row py-4 px-2 px-md-0">
+        <div class="col-md-4 text-center text-dark px-0">
+          <i class="fa-solid fa-gear fa-2x pb-3"></i>
+          <h5>Turning gears</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            nam pariatur deserunt.
+          </p>
+        </div>
+        <div class="col-md-4 text-center text-dark px-0">
+          <i class="fa-solid fa-cloud fa-2x pb-3"></i>
+          <h5>Sending data</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            nam pariatur deserunt.
+          </p>
+        </div>
+        <div class="col-md-4 text-center text-dark px-0">
+          <i class="fa-solid fa-cart-shopping fa-2x pb-3"></i>
+          <h5>Making money</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            nam pariatur deserunt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section - End -->
+
+    <!-- Are You Ready Section (Secound Sedtion) -->
+    <div class="container-fluid paralax-one">
+      <div class="row pt-4 pb-3">
+        <div class="col-12 text-capitalize text-white text-center">
+          <h2>are you ready to get started</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed
+            vitae tempora, facilis rerum impedit dolorum? Consectetur quidem
+            aperiam consequatur.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Are You Ready Section (Secound Sedtion) - End -->
+
+    <!-- Third Section (Laptop img section) -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 py-3 my-auto">
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea
+            consequuntur numquam similique minima cumque, dolores dolorem magni
+            suscipit ipsa earum sapiente eos, sequi deleniti, quos eius eaque?
+            Quod mollitia tenetur reprehenderit corporis possimus assumenda sed
+            iusto veritatis culpa, rem impedit. Aliquid suscipit amet accusamus
+            nihil velit quidem veniam placeat?
+          </p>
+          <button class="btn btn-outline-danger">Learn more</button>
+        </div>
+        <div class="col-md-6 py-3">
+          <img src="./Images/laptop.png" style="width: 100%" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Third Section (Laptop img section) - End -->
+
+    <!-- Fourth Section (Video Section) -->
+    <div class="container-fluid paralax-two">
+      <div class="row py-4">
+        <div class="col text-center text-white">
+          <i
+            data-toggle="modal"
+            data-target="#modal-video"
+            class="fa-sharp fa-solid fa-play fa-2x pb-3"
+          ></i>
+          <h3>See what we do</h3>
+        </div>
+        <div
+          class="modal fade"
+          id="modal-video"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1__CAdTJ5JU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth Section (Video Section) - End -->
+
+    <!-- Gallery Section -->
+    <div class="container">
+      <div class="row py-4">
+        <div class="col text-center">
+          <h3>Photo gallery</h3>
+          <small class="text-dark">Check out our photos.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 pb-4">
+          <img
+            data-toggle="modal"
+            data-target="#img-1"
+            style="max-width: 100%"
+            src="./Images/1.png"
+            alt=""
+          />
+          <div
+            class="modal fade"
+            id="img-1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img style="max-width: 100%" src="./Images/1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pb-4">
+          <img
+            data-toggle="modal"
+            data-target="#img-2"
+            style="max-width: 100%"
+            src="./Images/2.png"
+            alt=""
+          />
+          <div
+            class="modal fade"
+            id="img-2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img style="max-width: 100%" src="./Images/2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pb-4">
+          <img
+            data-toggle="modal"
+            data-target="#img-3"
+            style="max-width: 100%"
+            src="./Images/3.png"
+            alt=""
+          />
+          <div
+            class="modal fade"
+            id="img-3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img style="max-width: 100%" src="./Images/3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-md-4 py-lg-0">
+        <div class="col-sm-4 pb-4">
+          <img
+            data-toggle="modal"
+            data-target="#img-4"
+            style="max-width: 100%"
+            src="./Images/4.png"
+            alt=""
+          />
+          <div
+            class="modal fade"
+            id="img-4"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img style="max-width: 100%" src="./Images/4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pb-4">
+          <img
+            data-toggle="modal"
+            data-target="#img-5"
+            style="max-width: 100%"
+            src="./Images/5.png"
+            alt=""
+          />
+          <div
+            class="modal fade"
+            id="img-5"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img style="max-width: 100%" src="./Images/5.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pb-4">
+          <img
+            data-toggle="modal"
+            data-target="#img-6"
+            style="max-width: 100%"
+            src="./Images/6.png"
+            alt=""
+          />
+          <div
+            class="modal fade"
+            id="img-6"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img style="max-width: 100%" src="./Images/6.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery Section - End -->
+
+    <!-- Form Section (Sign Up Section) -->
+    <div class="container-fluid custom-bg-color">
+      <div class="row">
+        <div class="container text-white text-center">
+          <div class="row py-4">
+            <div class="col">
+              <h3>Sign Up for our newsletter</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                ipsum quos maxime? Aspernatur veniam odit in quis, provident,
+                vero commodi quidem iusto.
+              </p>
+              <form>
+                <div class="row text-center">
+                  <div class="col-md-4 offset-md-1 col-sm-12 pb-3 pb-md-0">
+                    <input
+                      type="text"
+                      class="form-control text-capitalize custom-select-sm"
+                      placeholder="enter name"
+                    />
+                  </div>
+                  <div class="col-md-4 col-sm-12 pb-3 pb-md-0">
+                    <input
+                      type="text"
+                      class="form-control text-capitalize custom-select-sm"
+                      placeholder="enter e-mail"
+                    />
+                  </div>
+                  <div
+                    class="col-md-2 col-sm-12 text-center text-md-left text-left"
+                  >
+                    <button class="btn btn-sm btn-primary text-white">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Section (Sign Up Section) - End -->
+
+    <!-- Footer -->
+    <div class="container-fluid custom-bg-black">
+      <div class="row">
+        <div class="col-12 text-center py-2">
+          <small class="text-white m-0">Copyright 2018 &copy; Glozzom</small>
+        </div>
+      </div>
+    </div>
+    <!-- Footer - End -->
+
+    <!-- JS & jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
+      });
+    </script>
+  </body>
+</html>

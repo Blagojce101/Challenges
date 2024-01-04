@@ -1,0 +1,83 @@
+/* custom background color */
+.custom-bg-color {
+    background-color: rgb(46, 46, 46);
+}
+
+.custom-bg-black {
+    background-color: black;
+}
+
+.custom-bg-red {
+    background-color: red;
+}
+
+.custom-bg-grey {
+    background-color: rgb(233, 231, 231);
+}
+
+.custom-border-bottom {
+    border-bottom: 1px solid black !important;
+}
+
+/* custom position Home section (carousel) */
+.text-custom-right {
+    top: 40%;
+    bottom: 70%;
+    transform: translateX(-40%, -70%);
+}
+.text-custom-center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* custom paralax efect (Secound section) */
+
+.paralax-one {
+    background-image: url("../Images/lights.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paralax-two {
+    background: rgba(0, 0, 0, 0.7) url("../Images/media.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* Paralax About section */
+
+.paralax-about {
+    background-image: url("../Images/image1.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;    
+}
+
+/* Secound section img */
+.custom-position-img {
+    top: -20%;
+    left: 0;
+}
+
+/* Custom Width */
+
+.custom-w-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Custom Active */
+
+.custom-active {
+    border-left: 2px solid white;
+    color: #fff !important;
+    padding-left: 5px !important;
+}
