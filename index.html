@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start here -->
+
+    <div class="container bg-light">
+      <!-- Navbar -->
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light custom-height">
+          <img src="./img/logo.png" alt="" class="custom-nav-img" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav font-weight-bold mx-auto d-flex flex-row justify-content-center justify-content-between"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">bikes </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">gear</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">parts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">tires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">service-info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">catalogues</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">contact</a>
+              </li>
+            </ul>
+            <div class="navbar-icons">
+              <i class="fa-solid fa-magnifying-glass fa-lg (33% increase)"></i>
+              <i class="fa-solid fa-bag-shopping ml-2 fa-lg (33% increase)"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Navbar - End -->
+
+      <hr />
+      <div class="container d-flex justify-content-start">
+        <div class="row">
+          <div class="col">
+            <span class="text-capitalize custom-text-weight">bikes</span>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div id="filterElements" class="col-md-3 mb-3">
+            <div class="row">
+              <div class="col border-bottom">
+                <h3>Filter by:</h3>
+                <a
+                  id="showAll"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span id="showAll">Show all</span>
+                  <span
+                    id="showAllBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col border-bottom">
+                <h5>Gender</h5>
+                <a
+                  id="male"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>Male</span>
+                  <span
+                    id="maleBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+                <a
+                  id="female"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>Female</span>
+                  <span
+                    id="femaleBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <h5>Brand</h5>
+                <a
+                  id="leGrandBikes"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>LE GRAND BIKES</span>
+                  <span
+                    id="leGrandBikesBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+                <a
+                  id="kross"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>KROSS</span>
+                  <span
+                    id="krossBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+                <a
+                  id="explorer"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>EXPLORER</span>
+                  <span
+                    id="explorerBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+                <a
+                  id="visitor"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>VISITOR</span>
+                  <span
+                    id="visitorBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  > </a
+                ><a
+                  id="pony"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>PONY</span>
+                  <span
+                    id="ponyBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+                <a
+                  id="force"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>FORCE</span>
+                  <span
+                    id="forceBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  > </a
+                ><a
+                  id="eBikes"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>E-BIKES</span>
+                  <span
+                    id="eBikesBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+                <a
+                  id="ideal"
+                  href="#"
+                  class="d-flex justify-content-between align-items-center filters"
+                >
+                  <span>IDEAL</span>
+                  <span
+                    id="idealBadge"
+                    class="badge badge-pill bg-secondary text-light"
+                    >0</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="bikesContainer" class="col-md-9 mb-3 d-flex flex-wrap"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer bg-muted">
+      <div class="row py-5 social-media">
+        <div class="col-lg-3 social-share pb-md-4 mb-sm-4 mb-md-0">
+          <p class="h4 pb-4">Social share</p>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="col-md-4 col-sm-3 col-lg-3 mr-sm-4 mr-md-0">
+          <div class="border border-top-0 border-bottom-0 border-right-0">
+            <p class="h4 pb-4 mb-0 ml-3">Event info</p>
+            <p class="footer-paragraph ml-3"><a href="#">Enter Now</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Event Info</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Course Maps</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Race Pack</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">FAQs</a></p>
+            <p class="footer-paragraph ml-3">
+              <a href="#">Am I Registered?</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-3 col-lg-3 mr-sm-4 mr-md-0">
+          <div class="border border-top-0 border-bottom-0 border-right-0">
+            <p class="h4 pb-4 mb-0 ml-3">Registration</p>
+            <p class="footer-paragraph ml-3"><a href="#">Valunteers</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Gallery</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Press</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+            <p class="footer-paragraph ml-3">
+              <a href="#">Privacy Policy</a>
+            </p>
+            <p class="footer-paragraph ml-3"><a href="#">Service Plus</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Contacts</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-3 col-lg-3">
+          <div class="border border-top-0 border-bottom-0 border-right-0">
+            <p class="h4 pb-4 mb-0 ml-3">Schedule</p>
+            <p class="footer-paragraph ml-3"><a href="#">Galery</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">About</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Videos</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">FAQs</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+            <p class="footer-paragraph ml-3"><a href="#">Valunteers</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
