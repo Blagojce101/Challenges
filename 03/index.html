@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    input {
+      width: 238px;
+      margin-top: 15px;
+      border: 1px solid black;
+      border-radius: 7px;
+      padding: 3px 3px 3px 7px;
+    }
+    textarea {
+      width: 238px;
+      margin-top: 15px;
+      border: 1px solid black;
+      border-radius: 7px;
+      padding: 5px;
+    }
+    button {
+      margin-top: 15px;
+      color: white;
+      font-size: 15px;
+      width: 130px;
+      margin-left: 20px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background-color: rgb(0, 123, 255);
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <input id="fromId" type="text" placeholder="From" />
+      <input id="toId" type="text" placeholder="To" />
+      <input id="subjectId" type="text" placeholder="Subject" />
+      <textarea
+        name="text"
+        id="textareaId"
+        cols="30"
+        rows="10"
+        placeholder="Message"
+      ></textarea>
+      <button id="sendBtn">Send !</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
